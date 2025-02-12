@@ -802,7 +802,10 @@ Automated and manual processes MAY be used in combination, (for example using au
 
 3. **Validation of eID**
    
-If authentication using an eID is used as evidence, the CA or RA SHALL confirm that the eID scheme is suitable (i.e., that the eID is accessible via a "notified" eIDAS-Node), and that the individual eID is valid (i.e., not expired, suspended, or revoked).  
+If authentication using an eID is used as evidence, the CA or RA SHALL confirm that: 
+
+  a. the eID scheme is suitable (i.e., the eID is accessible via a "notified" eIDAS-Node, or the mDL conforms with ISO/IEC 18013-7 and the issuer is present in the AAMVA Digital Trust Service); and 
+  b. the individual eID is valid (i.e., not expired, suspended, or revoked).  
 
 The authentication using the eID SHALL be created as part of the identity validation process, and evidence of the validation with the eID's Identity Provider (IdP) SHALL be retained by the CA or RA.
 
@@ -818,7 +821,7 @@ If required identity attributes to be collected are not present in the Certifica
 
 If an Attestation is used as evidence for the validation of Individual identity attributes, then the reliability of the Attestation SHALL be verified according to [Section 3.2.8](#328-reliability-of-verification-sources).
 
-6. **Validation using an Enterprise RA record**
+1. **Validation using an Enterprise RA record**
 
 An Enterprise RA issuing a Sponsor-validated Certificate SHALL validate all identity attributes of an Individual to be included in the Certificate. The Enterprise RA MAY rely upon existing internal records to validate Individual identity.
 
