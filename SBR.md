@@ -706,7 +706,10 @@ This method does not include "eID" as described in Regulation (EU) 910/2014.
 
 3. **Using electronic identification schemes (eID)**
    
-If an eID is used as evidence, the CA or RA SHALL only accept “notified” eID schemes according to Article 9 of the [eIDAS Regulation](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG) and the eID shall conform to eIDAS LoA “Substantial” or “High”.
+If an eID is used as evidence, the CA or RA SHALL only accept:
+
+  a. “notified” eID schemes according to Article 9 of the [eIDAS Regulation](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG) and the eID shall conform to eIDAS LoA “Substantial” or “High”; or
+  b. Mobile Driver Licenses (mDL) whose issuer is listed in AAMVA’s Digital Trust Service.
 
 The CA SHALL document and publish information describing the eID and associated eID attributes it accepts.
 
