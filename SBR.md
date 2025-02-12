@@ -295,6 +295,8 @@ The Definitions found in the [CA/Browser Forum's Network and Certificate System 
 
 **Mailbox Field**: In Subscriber Certificates contains a Mailbox Address of the Subject via `rfc822Name` or `otherName` value of type `id-on-SmtpUTF8Mailbox` in the `subjectAltName` extension, or in Subordinate CA Certificates via `rfc822Name` in permittedSubtrees within the `nameConstraints` extension.
 
+**Mobile Driver License (mDL)**: A digital identity document issued by a competent authority (e.g., a U.S. State Department of Motor Vehicles) under the American Association of Motor Vehicle Administrators (AAMVA) mDL Trust Framework and conforming to ISO/IEC 18013-5 or ISO/IEC 18013-7.
+
 **Multi-Perspective Issuance Corroboration**: A process by which the determinations made during domain validation and CAA checking by the Primary Network Perspective are corroborated by other Network Perspectives before Certificate issuance.
 
 **Multipurpose Profile**: The S/MIME Multipurpose Generation profiles are aligned with the more defined Strict Profiles, but with additional options for `extKeyUsage` and other extensions. This is intended to allow flexibility for crossover use cases between document signing and secure email. 
@@ -400,6 +402,7 @@ The Definitions found in the [CA/Browser Forum's Network and Certificate System 
 |FIPS	   |(US Government) Federal Information Processing Standard|
 |ICAO	   |International Civil Aviation Organization |
 |ISO	   |International Organization for Standardization |
+|mDL     |Mobile Driver License |
 |MPIC    |Multi-perspective issuance corroboration |
 |MV	   |Mailbox-validated |
 |NIST	   |(US Government) National Institute of Standards and Technology |
@@ -411,6 +414,8 @@ The Definitions found in the [CA/Browser Forum's Network and Certificate System 
 |TLS	   |Transport Layer Security |
 
 ###  1.6.3 References
+
+AAMVA, American Association of Motor Vehicle Administrators, Mobile Driver License Digital Trust Service, https://www.aamva.org/identity/mobile-driver-license-digital-trust-service
 
 ETSI EN 319 403, Electronic Signatures and Infrastructures (ESI); Trust Service Provider Conformity Assessment - Requirements for conformity assessment bodies assessing Trust Service Providers.
 
@@ -441,6 +446,8 @@ ISO 17065:2012, Conformity assessment — Requirements for bodies certifying pro
 ISO 17442-1:2020, Financial services — Legal entity identifier (LEI) - Part 1: Assignment.
 
 ISO 17442-2:2020, Financial services — Legal entity identifier (LEI) - Part 2: Application in digital certificates.
+
+ISO/IEC TS 18013-7, Information technology — Personal identification — ISO-compliant driving licence — Part 7: Mobile Driving Licence (mDL) digital trust service.
 
 Network and Certificate System Security Requirements, Version 2.0 or later. See https://cabforum.org/network-security-requirements/.
 
