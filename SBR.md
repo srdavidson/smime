@@ -710,7 +710,7 @@ This method does not include "eID" as described in Regulation (EU) 910/2014.
    
 If an eID is used as evidence, the CA or RA SHALL only accept:
 
-  a. “notified” eID schemes according to Article 9 of the [eIDAS Regulation](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG) and the eID shall conform to eIDAS LoA “Substantial” or “High”; or
+  a. “notified” eID schemes according to Article 9 of the [eIDAS Regulation](https://eur-lex.europa.eu/eli/reg/2014/910/2024-05-20) and the eID shall conform to eIDAS LoA “Substantial” or “High”; or
   b. Mobile Driver Licenses (mDL) whose issuer is listed in AAMVA’s Digital Trust Service.
 
 The CA SHALL document and publish information describing the eID and associated eID attributes it accepts.
@@ -745,7 +745,7 @@ In the case of `Sponsor-validated` Certificates approved by an Enterprise RA, re
 
 The Enterprise RA SHALL maintain records to satisfy the requirements of [Section 1.3.2](#132-registration-authorities) and [Section 8.8](#88-review-of-delegated-parties).
 
-6. **Affiliation from company attestation**
+1. **Affiliation from company attestation**
 
 In the case of `Sponsor-validated` Certificates not approved by an Enterprise RA, the CA or RA MAY verify the authority or affiliation of an Individual to represent an Organization to be included in the `subject:organizationName` of the Certificate using an Attestation provided by the Organization and verified in accordance with [Section 3.2.8](#328-reliability-of-verification-sources). 
 
