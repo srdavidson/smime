@@ -715,10 +715,10 @@ This method does not include "eID" as described in Regulation (EU) 910/2014.
 If an eID or Mobile Driver License (mDL) is used as evidence, the CA or RA SHALL only accept:
 
   a. “notified” eID schemes according to Article 9 of the [eIDAS Regulation](https://eur-lex.europa.eu/eli/reg/2014/910/2024-05-20) and the eID shall conform to eIDAS LoA “Substantial” or “High”; or
-  b. mDLs meeting the following:
+  b. mDLs with the following characteristics:
    * The mDL SHALL be issued by a government authority officially recognized in its jurisdiction;
-   * The issuing authority SHALL demonstrate compliance with ISO/IEC 18013-5 (mobile document standards) and any applicable standards in the jurisdiction of the issuing authority; and
-   * The issuing authority SHALL maintain a verifiable PKI to support digital signature validation.
+   * The issuing authority SHALL demonstrate compliance with ISO/IEC 18013-5 and other applicable standards in the jurisdiction of the issuing authority; and
+   * The issuing authority SHALL maintain an accessible PKI to support digital signature validation of the mDL.
 
 The CA SHALL document and publish information describing the eID and mDL and associated attributes it accepts.
 
@@ -816,8 +816,8 @@ If authentication using an eID or mDL is used as evidence, the CA or RA SHALL co
   a. in the case of eID according to Article 9 of the [eIDAS Regulation](https://eur-lex.europa.eu/eli/reg/2014/910/2024-05-20), that the eID scheme is suitable (i.e., the eID is accessible via a "notified" eIDAS-Node).  
   
   b. in the case of mDL:
-   * the issuing authority is suitable (i.e., authorized by recognized trust frameworks for the jurisdiction of the issuing authority); and
-   * the mDL attributes and digital signatures have been validated in accordance with ISO/IEC 18013-3, ISO/IEC 18013-7, and any applicable standards in the jurisdiction of the issuing authority.
+   * the issuing authority is suitable (i.e., currently authorized by recognized trust frameworks for the jurisdiction of the issuing authority as a mobile drivers license); and
+   * the mDL attributes and digital signatures have been validated in accordance with ISO/IEC 18013-3, ISO/IEC 18013-7, and other applicable standards in the jurisdiction of the issuing authority.
   
   The CA or RA SHALL confirm that the individual eID or mDL is valid (i.e., not expired, suspended, or revoked).  
 
