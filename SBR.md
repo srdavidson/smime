@@ -87,6 +87,7 @@ The following Certificate Policy identifiers are reserved for use by CAs as a me
 | 1.0.6   | SMC08    |Deprecate Legacy Generation Profiles and Minor Updates | August 29, 2024 |
 | 1.0.7   | SMC09    |Update to WebTrust requirements, require linting, minor edits | November 22, 2024 |
 | 1.0.8   | SMC010   |Introduction of Multi-Perspective Issuance Corroboration | December 22, 2024 |
+| 1.0.X   | TBD   |Prefix for Pseudonym in commonName | TBD |
 
 \* Publication Date is the date the new version was published following the Intellectual Property Review.
 
@@ -104,6 +105,7 @@ The following Certificate Policy identifiers are reserved for use by CAs as a me
 | 1.0.7 | SMC09  |SHALL implement pre-issuance linting of S/MIME Certificates | September 15, 2025 |
 | 1.0.8 | SMC010 | SHOULD implement MPIC | March 15, 2025 |
 | 1.0.8 | SMC010 | SHALL implement MPIC | May 15, 2025 |
+| 1.0.X   | TBD   |SHALL use prefix for Pseudonym in commonName | TBD |
 
 ## 1.3 PKI participants
 
@@ -2182,8 +2184,11 @@ If present, the Personal Name SHALL contain a name of the Subject. The Personal 
 
 If present, the Mailbox Address SHALL contain a `rfc822Name` or `otherName` value of type `id-on-SmtpUTF8Mailbox` from `extensions:subjectAltName`.
 
-If the `subject:commonName` contains a Pseudonym, then the `subject:givenName` and/or `subject:surname` attributes SHALL NOT be present. If present, the Pseudonym SHALL contain the same content as the `subject:pseudonym` if that Subject attribute is also present. Effective DATE, a Pseudonym appearing in the `subject:commonName` SHALL be prefixed by either "Pseudo: " or "PN: ".
+If the `subject:commonName` contains a Pseudonym, then the `subject:givenName` and/or `subject:surname` attributes SHALL NOT be present. If present, the Pseudonym SHALL contain the same content as the `subject:pseudonym` if that Subject attribute is also present. A Pseudonym appearing in the `subject:commonName` MAY include either "Pseudo: " or "PN: " as a prefix. Effective on DATE, a Pseudonym appearing in the `subject:commonName` SHALL include either "Pseudo: " or "PN: " as a prefix.  For example:
 
+    * Pseudo: Example_Pseudonym
+    * PN: Example_Pseudonym
+  
 If the `subject:commonName` contains a Personal Name, then the `subject:pseudonym` attribute SHALL NOT be present.
 
 **Note**: Like all other Certificate attributes, `subject:commonName` and `subject:emailAddress` SHALL comply with the attribute upper bounds defined in [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280).
