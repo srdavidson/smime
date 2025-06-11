@@ -106,6 +106,7 @@ The following Certificate Policy identifiers are reserved for use by CAs as a me
 | 1.0.8 | SMC010 | SHOULD implement MPIC | March 15, 2025 |
 | 1.0.8 | SMC010 | SHALL implement MPIC | May 15, 2025 |
 | 1.0.X   | TBD   |SHALL use prefix for Pseudonym in commonName | TBD |
+1.0.X   | TBD   |SHALL NOT use Mailbox Address in Pseudonym | TBD |
 
 ## 1.3 PKI participants
 
@@ -2242,7 +2243,7 @@ e. __Certificate Field:__ `subject:givenName` (2.5.4.42) and/or `subject:surname
    __Contents:__ If present, the `subject:givenName` field and `subject:surname` field SHALL contain a Natural Person Subject’s name as verified under [Section 3.2.4](#324-authentication-of-individual-identity). Subjects with a single legal name SHALL provide the name in the `subject:surname` attribute. The `subject:givenName` and/or `subject:surname` SHALL NOT be present if the `subject:pseudonym` is present.
 
 f. __Certificate Field:__ `subject:pseudonym` (2.5.4.65)  
-   __Contents:__ The `subject:pseudonym` SHALL NOT be present if the `subject:givenName` and/or `subject:surname` are present. If present, the `subject:pseudonym` field SHALL be verified according to [Section 3.1.3](#313-anonymity-or-pseudonymity-of-subscribers).
+   __Contents:__ The `subject:pseudonym` SHALL NOT be present if the `subject:givenName` and/or `subject:surname` are present. If present, the `subject:pseudonym` field SHALL be verified according to [Section 3.1.3](#313-anonymity-or-pseudonymity-of-subscribers). Effective, DATE, the `subject:pseudonym` SHALL NOT include a Mailbox Address.
 
 g. __Certificate Field:__ `subject:serialNumber` (2.5.4.5)  
    __Contents:__ If present, the `subject:serialNumber` MAY be used to contain an identifier assigned by the CA or RA to identify and/or to disambiguate the Subscriber. 
