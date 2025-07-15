@@ -2185,7 +2185,7 @@ If present, the Personal Name SHALL contain a name of the Subject. The Personal 
 
 If present, the Mailbox Address SHALL contain a `rfc822Name` or `otherName` value of type `id-on-SmtpUTF8Mailbox` from `extensions:subjectAltName`.
 
-If the `subject:commonName` contains a Pseudonym, then the `subject:givenName` and/or `subject:surname` attributes SHALL NOT be present. If present, the Pseudonym SHALL contain the same content as the `subject:pseudonym` if that Subject attribute is also present. A Pseudonym appearing in the `subject:commonName` MAY include either "Pseudo: " or "PN: " as a prefix. Effective on DATE, a Pseudonym appearing in the `subject:commonName` SHALL include either "Pseudo: " or "PN: " as a prefix.  For example:
+If the `subject:commonName` contains a Pseudonym, then the `subject:givenName` and/or `subject:surname` attributes SHALL NOT be present. If present, the Pseudonym SHALL contain the same content as the `subject:pseudonym` if that Subject attribute is also present. A prefix of either "Pseudo: " or "PN: " MAY be used before a Pseudonym appearing in the `subject:commonName`. Effective on DATE, a prefix of either "Pseudo: " or "PN: " SHALL be used before a Pseudonym appearing in the `subject:commonName`. For example:
 
     * Pseudo: Example_Pseudonym
     * PN: Example_Pseudonym
