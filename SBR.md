@@ -555,7 +555,7 @@ For `Sponsor-validated` certificates, the CA MAY use a `subject:pseudonym` attri
 
 For `Individual-validated` certificates, the CA MAY use the `subject:pseudonym` attribute if the associated Subject has been verified according to [Section 3.2.4](#324-authentication-of-individual-identity). If present, the `subject:pseudonym` attribute SHALL be:
 
-  1. either a identifier selected by the CA for the Subject of the Certificate; or
+  1. either an identifier selected by the CA for the Subject of the Certificate; or
   2. an identifier verified based on government-issued identity documents.
 
 Pseudonym Certificates are not anonymous. CAs and Enterprise RAs SHALL treat Individual identity information relating to a Pseudonym as private in accordance with [Section 9.4.2](#942-information-treated-as-private).
