@@ -2130,8 +2130,8 @@ This extension SHALL NOT be marked critical. When present, its value SHALL be DE
    | Profile | `Enterprise RA Indicator`      | 
    |------|-----------------------|
    | `Mailbox-validated` | Prohibited |
-   | `Organization-validated` | See below |
-   | `Sponsor-validated` | See below  |
+   | `Organization-validated` | Conditional: present only if an Enterprise RA authorized the Certificate Request (see below) |
+   | `Sponsor-validated` | Conditional: present only if an Enterprise RA authorized the Certificate Request (see below)   |
    | `Individual-validated` | Prohibited |
 
 Effective [DATE XXX], this extension MAY be present in Certificates issued under the `Organization-validated` or `Sponsor-validated` profiles for which an Enterprise RA authorized the Certificate Request. Effective [DATE YYY], this extension SHALL be present in each such Certificate. This extension SHALL NOT be present in any Certificate for which no Enterprise RA authorized the Certificate Request.
