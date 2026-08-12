@@ -145,6 +145,8 @@ The CA SHALL impose these limitations as a contractual requirement on the Enterp
 
 An Enterprise RA MAY also submit Certificate Requests using the `Mailbox-validated` profile for users whose email domain(s) are not under the delegated organization’s authorization or control.  In this case, the CA SHALL confirm that the mailbox holder has control of the requested Mailbox Address(es) in accordance with [Section 3.2.2.2](#3222-validating-control-over-mailbox-via-email) or [Section 3.2.2.4](#3224-validating-control-over-mailbox-using-acme).
 
+Effective [DATE 1], for each Subscriber Certificate issued under the `Organization-validated` or `Sponsor-validated` profile for which an Enterprise RA authorized the Certificate Request, the CA SHALL include the `Enterprise RA Indicator` extension in accordance with [Section 7.1.2.3](#7123-subscriber-certificates).
+
 ### 1.3.3 Subscribers
 
 As defined in [Section 1.6.1](#161-definitions).
