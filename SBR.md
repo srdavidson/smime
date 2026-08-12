@@ -114,6 +114,8 @@ The following Certificate Policy identifiers are reserved for use by CAs as a me
 | 1.0.14 | SMC016 | SHALL sunset all remaining use of SHA-1 in Certificates and CRLs | September 15, 2026 |
 | 1.0.15  | SMC017   |New Root or Subordinate CA RSA Key SHALL be at least 4096 bits | September 15, 2026 |
 | 1.0.15  | SMC017   |SHALL cease Subscriber Certificate issuance from Subordinate CA with RSA Key less than 3072 bits | September 15, 2027 |
+| 1.0.xx  | TBD   | Enterprise RA Indicator MAY be present in Certificates for which an Enterprise RA authorized the Certificate Request | TBD |
+| 1.0.xx  | xx   | Enterprise RA Indicator SHALL be present in Certificates for which an Enterprise RA authorized the Certificate Request | TBD |
 
 ## 1.3 PKI participants
 
@@ -2126,6 +2128,16 @@ n. `subjectKeyIdentifier` (SHOULD be present)
 0. `Enterprise RA Indicator` (conditional)
 
 This extension SHALL NOT be marked critical. When present, its value SHALL be DER-encoded ASN.1 NULL.
+
+```ASN.1
+id-cabf-ext-enterpriseRAIndicator OBJECT IDENTIFIER ::=
+    { joint-iso-itu-t(2) international-organizations(23)
+      ca-browser-forum(140) certificate-extensions(TBD)
+      enterprise-ra-indicator(1) }
+      
+EnterpriseRAIndicator ::= NULL
+END
+```
 
    | Profile | `Enterprise RA Indicator`      | 
    |------|-----------------------|
