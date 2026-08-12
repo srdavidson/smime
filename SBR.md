@@ -1,9 +1,9 @@
 ---
 title: Baseline Requirements for the Issuance and Management of Publicly-Trusted S/MIME Certificates
-subtitle: Version 1.0.15
+subtitle: Version 1.0.XX
 author:
   - CA/Browser Forum
-date: July 30, 2026
+date: TBD, 2026
 copyright: |
   Copyright 2026 CA/Browser Forum
   This work is licensed under the Creative Commons Attribution 4.0 International license.
@@ -260,6 +260,8 @@ The Definitions found in the [CA/Browser Forum's Network and Certificate System 
 **Electronic Identification (eID)**:  A credential containing Individual identification data and/or attributes and which is used for authentication for an online service. 
 
 **Enterprise RA**: An employee or agent of an organization unaffiliated with the CA who authorizes issuance of Certificates to that organization.
+
+**Enterprise RA Indicator**: A Certificate extension, described in Section 7.1.2.3, whose presence identifies a Subscriber Certificate for which an Enterprise RA authorized the Certificate Request.
 
 **European Unique Identifier (EUID)**: The EUID uniquely identifies officially-registered organizations, Legal Entities, and branch offices within the European Union or the European Economic Area. The EUID is specified in chapter 9 of the Annex contained in the Implementing Regulation (EU) 2021/1042 which describes rules for the application of Directive (EU) 2017/1132 "relating to certain aspects of company law (codification)".
 
