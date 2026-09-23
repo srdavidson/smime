@@ -228,7 +228,7 @@ The Definitions found in the [CA/Browser Forum's Network and Certificate System 
 
 **Certificate Management Process**: Processes, practices, and procedures associated with the use of keys, software, and hardware, by which the CA verifies Certificate Data, issues Certificates, maintains a Repository, and revokes Certificates.
 
-**Composite ML-DSA**: A PQ/T hybrid digital signature algorithm that combines ML-DSA with a traditional digital signature algorithm into a single algorithm, as specified in the Composite ML-DSA Specification.
+**Composite ML-DSA**: A Post Quantum/Traditional hybrid digital signature algorithm that combines ML-DSA with a traditional digital signature algorithm into a single algorithm, as specified in the Composite ML-DSA Specification.
 
 **Composite ML-DSA Specification**: IETF draft-ietf-lamps-pq-composite-sigs, Composite Module-Lattice-Based Digital Signature Algorithm (ML-DSA) for use in X.509 Public Key Infrastructure, or the RFC that supersedes it.
 
